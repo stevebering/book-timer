@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+.right {
+	text-align: right;
+}
+
+.timer {
+	font-size: 2rem;
+	font-weight: bold;
+	vertical-align: text-bottom;
+}

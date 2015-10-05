@@ -1,0 +1,29 @@
+<ion-view view-title="Timer">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">Timer</div>
+      <div class="item row">
+         <div class='col col-center'>
+            <span class='timer'>{{ elapsed }}</span>     
+         </div>
+         <div class='col right'>
+            <button type="button" 
+                class='button button-icon icon ion-play'
+                ng-disabled='running'
+                ng-click='start()'
+                ng-cloak=''></button>
+            <button type='button' 
+                class='button button-icon icon ion-stop'
+                ng-disabled='!running'
+                ng-click='stop()'
+                ng-cloak=''></button> 
+            <button type='button' 
+                class='button button-icon icon ion-trash-a'
+                ng-disabled='running'
+                ng-click='clear()'
+                ng-cloak=''></button> 
+         </div>
+      </div>
+    </div>    
+  </ion-content>
+</ion-view>
